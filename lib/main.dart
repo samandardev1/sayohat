@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    mkq = MediaQuery.of(context).size;
+    mq = MediaQuery.of(context).size;
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
