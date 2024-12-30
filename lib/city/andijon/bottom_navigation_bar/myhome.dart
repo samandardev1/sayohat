@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sayohat/city/andijon/drawer/mexmonxona.dart';
+import 'package:sayohat/city/andijon/drawer/restaran.dart';
 
 final List<Map<String, dynamic>> imagesData = [
   {
-    'type': 'Mehmonxona',
+    'type': 'Mehmonxonalar',
     'images': [
       'rasimlar/02.jpg',
       'rasimlar/03.jpg',
@@ -10,27 +12,28 @@ final List<Map<String, dynamic>> imagesData = [
       'rasimlar/02.jpg',
     ],
     'texts': [
-      'Turi : Mehmonxona',
-      'Viloyat : Namangan',
-      "Mo'jal : Namangan To'raqo'rg'on ",
-      'Tavsif : Hamma sharoyitlar bor honalar shinam ',
-      "Narxi : 400#",
+      'Turi : Hotel, Hostel, ',
+      'Manzil: Andijon shaxri 23-uy'
+      "Mo'jal : Markaziy bank yonida ",
+      'Tavsif : Barcha sharoyitlar bor honalar shinam ',
+      "Batafsil malumot olish uchun bosing",
     ],
   },
   {
-    'type': 'Mehmonxona',
+    'type': 'Restaranlar',
     'images': [
-      'rasimlar/02.jpg',
-      'rasimlar/03.jpg',
-      'rasimlar/04.jpg',
-      'rasimlar/02.jpg',
+      'rasimlar/res1.jpeg',
+      'rasimlar/res4.jpeg',
+      'rasimlar/res5.jpeg',
+      'rasimlar/res3.jpeg',
+      'rasimlar/res2.jpeg',
     ],
     'texts': [
-      'Turi : Mehmonxona',
-      'Viloyat : Namangan',
-      "Mo'jal : Namangan To'raqo'rg'on ",
-      'Tavsif : Hamma sharoyitlar bor honalar shinam ',
-      "Narxi : 400#",
+      'Turi : Restaran, choyxona, kafe',
+      'Manzil : Andijon shaxar',
+      "Mo'jal : Navro'z mall",
+      'Tavsif : Barcha turdagi taomlar mavjud ',
+      "Batafsil malumot olish uchun bosing",
     ],
   },
   {
@@ -101,9 +104,9 @@ final List<Map<String, dynamic>> imagesData = [
     'type': 'Sanatoriya',
     'images': [
       'rasimlar/04.jpg',
-      'assets/image3_2.jpg',
-      'assets/image3_3.jpg',
-      'assets/image3_4.jpg',
+      'rasimlar/02.jpg',
+      'rasimlar/03.jpg',
+      'rasimlar/04.jpg',
     ],
     'texts': [
       'Turi : Mehmonxona',
@@ -116,9 +119,9 @@ final List<Map<String, dynamic>> imagesData = [
   {
     'images': [
       'rasimlar/03.jpg',
-      'assets/image4_2.jpg',
-      'assets/image4_3.jpg',
-      'assets/image4_4.jpg',
+      'rasimlar/02.jpg',
+      'rasimlar/03.jpg',
+      'rasimlar/04.jpg',
     ],
     'texts': [
       'Turi : Mehmonxona',
@@ -150,7 +153,17 @@ class _MyHomePageState extends State<MyHome> {
             final _pageController = PageController();
             return GestureDetector(
               onTap: () {
-                
+                 if (index == 0) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MehmonxonaScreen()),
+                  );
+                } else if (index == 1) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const RestarnScreen()),
+                  );
+                }
               },
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -194,3 +207,10 @@ class _MyHomePageState extends State<MyHome> {
     );
   }
 }
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:sayohat/city/andijon/bottom_navigation_bar/mapscreen.dart';
 import 'package:sayohat/city/andijon/bottom_navigation_bar/myhome.dart';
 import 'package:sayohat/city/andijon/bottom_navigation_bar/settingsscreen.dart';
 import 'package:sayohat/city/andijon/bottom_navigation_bar/userscreen.dart';
@@ -37,7 +38,7 @@ class _AndijonState extends State<Andijon> {
         index: tabIndex,
         children: const [
           MyHome(),
-          // MapScreen(),
+          MapScreen(),
           SettingsScreen(),
           UserScreen(),
         ],

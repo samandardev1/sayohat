@@ -5,18 +5,7 @@ class HomeScreen extends StatelessWidget {
 
   final List myItems = [
     'Andijon viloyati',
-    'Buxoro viloyati',
-    "Farg'ona viloyati",
-    'Xorazm viloyati',
-    'Namangan viloyati',
-    'Navoiy viloyati',
-    'Qashqadaryo viloyati',
-    "Qoraqalpog'iston Respublikasi",
-    'Samarqand viloyati',
-    'Sirdaryo viloyati',
-    'Surxondaryo viloyati',
-    'Toshkent viloyati',
-    'Toshkent shahri',
+    'Buxoro viloyati'
   ];
 
   @override

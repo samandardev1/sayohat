@@ -10,7 +10,7 @@ class SettingsScreen extends StatelessWidget {
       body: Container(
         child: const Center(
           child: Text(
-            'Welcome to Home Screen!',
+            'Welcome to Setting Screen!',
             style: TextStyle(fontSize: 20),
           ),
         ),
